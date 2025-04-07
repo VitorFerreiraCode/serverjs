@@ -22,6 +22,7 @@ npm i express
 ### Crie um server.js
 ```sh
 import express from 'express';
+app.use(express.json());
 
 const app = express();
 
@@ -31,3 +32,14 @@ app.get('/rota', (req, res) => {
 
 app.listen(3000);
 ```
+
+## Tipos de Requests
+
+#### Query Params
+- Busca genérica
+#### Route Params
+- Busca por ID
+#### Body Params
+{
+    "nome":"x","id":y
+}
